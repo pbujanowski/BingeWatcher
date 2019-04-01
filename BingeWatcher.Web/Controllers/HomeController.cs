@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BingeWatcher.Web.Models;
+using BingeWatcher.Core.Models;
+using BingeWatcher.Web.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace BingeWatcher.Web.Controllers
 {

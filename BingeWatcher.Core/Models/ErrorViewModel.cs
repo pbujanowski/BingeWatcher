@@ -1,6 +1,6 @@
 using System;
 
-namespace BingeWatcher.Web.Models
+namespace BingeWatcher.Core.Models
 {
     public class ErrorViewModel
     {

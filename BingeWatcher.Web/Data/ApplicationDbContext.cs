@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BingeWatcher.Core.Models;
 
 namespace BingeWatcher.Web.Data
 {
@@ -12,5 +13,7 @@ namespace BingeWatcher.Web.Data
             : base(options)
         {
         }
+
+        public DbSet<Movie> Movies { get; set; }
     }
 }
