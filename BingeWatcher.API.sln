@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingeWatcher.Core", "BingeWatcher.Core\BingeWatcher.Core.csproj", "{70F44EBE-5FAA-41FF-B036-4AEE7F42BB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingeWatcher.API", "BingeWatcher.API\BingeWatcher.API.csproj", "{C31DA7D5-8452-417E-BB5B-98B522580DE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70F44EBE-5FAA-41FF-B036-4AEE7F42BB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F44EBE-5FAA-41FF-B036-4AEE7F42BB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F44EBE-5FAA-41FF-B036-4AEE7F42BB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F44EBE-5FAA-41FF-B036-4AEE7F42BB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31DA7D5-8452-417E-BB5B-98B522580DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31DA7D5-8452-417E-BB5B-98B522580DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31DA7D5-8452-417E-BB5B-98B522580DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31DA7D5-8452-417E-BB5B-98B522580DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1582513B-B46D-41BF-8086-CDFBB1199CB5}
+	EndGlobalSection
+EndGlobal
