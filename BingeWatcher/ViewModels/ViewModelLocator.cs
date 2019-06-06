@@ -8,7 +8,7 @@ using GalaSoft.MvvmLight.Ioc;
 namespace BingeWatcher.ViewModels
 {
     [Windows.UI.Xaml.Data.Bindable]
-    public class ViewModelLocator
+    public sealed class ViewModelLocator
     {
         private static ViewModelLocator _current;
 
@@ -21,6 +21,7 @@ namespace BingeWatcher.ViewModels
             Register<MainViewModel, MainPage>();
             Register<MoviePlayerViewModel, MoviePlayerPage>();
             Register<SettingsViewModel, SettingsPage>();
+            Register<LoginViewModel, LoginPage>();
         }
 
         public SettingsViewModel SettingsViewModel => SimpleIoc.Default.GetInstance<SettingsViewModel>();
@@ -33,6 +34,8 @@ namespace BingeWatcher.ViewModels
         public ShellViewModel ShellViewModel => SimpleIoc.Default.GetInstance<ShellViewModel>();
 
         public NavigationServiceEx NavigationService => SimpleIoc.Default.GetInstance<NavigationServiceEx>();
+
+        public LoginViewModel LoginViewModel => SimpleIoc.Default.GetInstance<LoginViewModel>();
 
         public void Register<VM, V>()
             where VM : class
