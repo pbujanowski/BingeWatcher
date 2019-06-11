@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BingeWatcher.Core.Models;
-using BingeWatcher.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace BingeWatcher.API.Controllers
 {
@@ -15,43 +12,41 @@ namespace BingeWatcher.API.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        private readonly IMovieService movieService;
-
         // GET: api/Movies
         [HttpGet]
         [Authorize]
-        public async Task<string> GetAllMovies()
+        public IEnumerable<string> Get()
         {
-            var movies = await movieService.GetAllMovies().ConfigureAwait(false);
-            return JsonConvert.SerializeObject(movies);
+            return new string[] { "value1", "value2" };
         }
 
         // GET: api/Movies/5
         [HttpGet("{id}", Name = "Get")]
         [Authorize]
-        public async Task<string> GetMovieById(int id)
+        public string Get(int id)
         {
-            var movie = await movieService.GetMovieById(id).ConfigureAwait(false);
-            return JsonConvert.SerializeObject(movie);
+            return "value";
         }
 
-        [HttpGet("{movieGenre}", Name = "Get")]
-        public async Task<string> GetMoviesByGenre(MovieGenre movieGenre)
+        // POST: api/Movies
+        [HttpPost]
+        [Authorize]
+        public void Post([FromBody] string value)
         {
-            var movies = await movieService.GetMoviesByGenre(movieGenre).ConfigureAwait(false);
-            return JsonConvert.SerializeObject(movies);
         }
 
-        [HttpGet("{searchText}", Name = "Get")]
-        public async Task<string> GetMoviesBySearchText(string searchText)
+        // PUT: api/Movies/5
+        [HttpPut("{id}")]
+        [Authorize]
+        public void Put(int id, [FromBody] string value)
         {
-            var movies = await movieService.GetMoviesBySearchText(searchText).ConfigureAwait(false);
-            return JsonConvert.SerializeObject(movies);
         }
 
-        public MoviesController(IMovieService movieService)
+        // DELETE: api/ApiWithActions/5
+        [HttpDelete("{id}")]
+        [Authorize]
+        public void Delete(int id)
         {
-            this.movieService = movieService;
         }
     }
 }

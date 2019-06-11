@@ -25,7 +25,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using BingeWatcher.API.Services;
 using BingeWatcher.API.Helpers;
-using BingeWatcher.Core.Services;
 
 namespace BingeWatcher.API
 {
@@ -87,8 +86,7 @@ namespace BingeWatcher.API
                 };
             });
 
-            services.AddScoped<IUserService, UserService>()
-                .AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
