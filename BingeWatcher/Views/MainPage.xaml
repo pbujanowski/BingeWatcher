@@ -11,6 +11,50 @@
         Margin="{StaticResource MediumLeftRightMargin}">
         <Grid
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <StackPanel Orientation="Horizontal">
+
+
+                <Button Content="Seriale" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Filmy" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <TextBox Name="wyszukaj" Text="Wyszukiwanie"  Margin="20,0,0,670" Height="40"  Width="240">
+
+                </TextBox>
+
+                <Button Content="Zarejestruj się" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Zaloguj" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+            
+           
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
         </Grid>
