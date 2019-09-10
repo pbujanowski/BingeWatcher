@@ -27,5 +27,11 @@ namespace BingeWatcher.Views
         {
 
         }
+
+        private void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            //gatunki
+
+        }
     }
 }

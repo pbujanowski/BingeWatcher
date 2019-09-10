@@ -33,6 +33,9 @@
             -->
             <winui:NavigationViewItem x:Uid="Shell_Main" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MainViewModel" />
             <winui:NavigationViewItem x:Uid="Shell_MoviePlayer" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MoviePlayerViewModel" />
+            <winui:NavigationViewItem x:Uid="Shell_MovieGeneres" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MovieGeneresViewModel" />
+            <winui:NavigationViewItem x:Uid="Shell_Search" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.SearchViewModel" />
+            <winui:NavigationViewItem x:Uid="Shell_Login" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.LoginViewModel" />
         </winui:NavigationView.MenuItems>
         <i:Interaction.Behaviors>
             <ic:EventTriggerBehavior EventName="ItemInvoked">
