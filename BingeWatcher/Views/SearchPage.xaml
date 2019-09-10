@@ -6,7 +6,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid>
-        <Button Content=" tak chujwoo " Height=" 140" Width=" 100" />
-    </Grid>
+  <Grid>
+    <Button Content="Wyszukiwarka filmów " Height="50" Width="420" HorizontalAlignment="Center" Margin="0,203,0,0" VerticalAlignment="Top"  />
+    <TextBox HorizontalAlignment="Center" Margin="0,272,0,0" Text="" VerticalAlignment="Top" Width="420"/>
+
+  </Grid>
 </Page>
