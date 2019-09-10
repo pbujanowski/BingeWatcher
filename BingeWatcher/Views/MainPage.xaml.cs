@@ -27,15 +27,5 @@ namespace BingeWatcher.Views
         {
 
         }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
-        {
-
-        }
     }
 }

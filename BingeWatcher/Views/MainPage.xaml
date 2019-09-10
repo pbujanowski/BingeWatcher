@@ -8,93 +8,55 @@
     mc:Ignorable="d">
     <Grid
         x:Name="ContentArea"
-        Margin="{StaticResource MediumLeftRightMargin}" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-        <StackPanel Grid.Column="6" Grid.Row="1"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Width="Auto" >
-            <Button Content="Seriale" Margin="10,0,0,0" HorizontalAlignment="Center" Height="40"  Width="130" FontWeight="Bold" RenderTransformOrigin="1.069,-2" VerticalAlignment="Center">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="DarkOrange"/>
-                        <GradientStop Color="White" Offset="4"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button Content="Filmy" Margin="10,0,0,0" Height="40"  Width="130" FontWeight="Bold" >
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="DarkOrange"/>
-                        <GradientStop Color="White" Offset="4"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <StackPanel Orientation="Horizontal">
 
-            <TextBox x:Name="wyszukaj" Text="wyszukaj"  Margin="10,0,0,0" Height="40"  Width="220"/>
 
-            <Button Content="Szukaj" Margin="10,0,0,0" Height="40"  Width="100" FontWeight="Bold">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="DarkOrange"/>
-                        <GradientStop Color="White" Offset="4"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+                <Button Content="Seriale" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Filmy" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
 
-            <Button Content="Zarejestruj się" Margin="10,0,0,0" Height="40"  Width="130" FontWeight="Bold">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="DarkOrange"/>
-                        <GradientStop Color="White" Offset="4"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button Content="Zaloguj" Margin="10,0,0,0" Height="40"  Width="130" FontWeight="Bold">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="DarkOrange"/>
-                        <GradientStop Color="White" Offset="4"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-        </StackPanel>
+                <TextBox Name="wyszukaj" Text="Wyszukiwanie"  Margin="20,0,0,670" Height="40"  Width="240">
 
-        <!--    <Grid HorizontalAlignment="Center" Height="211" Width="42" Margin="0,0,0,0"/> -->
+                </TextBox>
 
-        <ListBox Margin="80,72,80,612" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Path=TaskName}" />
-                        <TextBlock Text="{Binding Path=Description}"/>
-                        <TextBlock Text="{Binding Path=Priority}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+                <Button Content="Zarejestruj się" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Zaloguj" Margin="20,0,0,670" Height="40"  Width="150" FontWeight="Bold">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="DarkOrange"/>
+                            <GradientStop Color="White" Offset="4"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
 
-        <ListBox Margin="80,436,80,362" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding TaskName}" />
-                        <TextBlock Text="{Binding Description}"/>
-                        <TextBlock Text="{Binding Priority}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <ListBox Margin="80,696,80,102" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding TaskName}" />
-                        <TextBlock Text="{Binding Description}"/>
-                        <TextBlock Text="{Binding Priority}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-
-        <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+            </StackPanel>
+            
+           
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
-
+        </Grid>
     </Grid>
 </Page>
