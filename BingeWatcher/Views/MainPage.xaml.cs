@@ -17,21 +17,5 @@ namespace BingeWatcher.Views
         {
             InitializeComponent();
         }
-
-        private void Rejestracja_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
-        {
-            
-
-        }
     }
 }

@@ -12,7 +12,7 @@ namespace BingeWatcher.Views
 {
     public sealed partial class SearchPage : Page
     {
-        private SearchPageViewModel ViewModel { get; } = ViewModelLocator.Current.MovieGeneresViewModel;
+        private SearchViewModel ViewModel { get; } = ViewModelLocator.Current.SearchViewModel;
 
         // For more on the MediaPlayer and adjusting controls and behavior see https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/media-playback
         // The DisplayRequest is used to stop the screen dimming while watching for extended periods
@@ -22,9 +22,6 @@ namespace BingeWatcher.Views
         public SearchPage()
         {
             InitializeComponent();
-        }
-
-       
-  
+        }  
     }
 }
