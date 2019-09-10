@@ -149,6 +149,18 @@
     <value>Odtwarzacz</value>
     <comment>Navigation view item name for MoviePlayer</comment>
   </data>
+  <data name="Shell_MovieGeneres.Content" xml:space="preserve">
+    <value>Gatunki</value>
+    <comment>Navigation view item name for MovieGeneres</comment>
+  </data>
+  <data name="Shell_Search.Content" xml:space="preserve">
+    <value>Szukaj</value>
+    <comment>Navigation view item for Searching</comment>
+  </data>
+  <data name="Shell_Login.Content" xml:space="preserve">
+    <value>Zaloguj</value>
+    <comment>Navigation view item for login</comment>
+  </data>
   <data name="ExceptionSettingsStorageExtensionsFileNameIsNullOrEmpty" xml:space="preserve">
     <value>File name is null or empty. Specify a valid file name</value>
     <comment>File name is null or empty to save file in settings storage extensions</comment>
