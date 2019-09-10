@@ -6,7 +6,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid>
-        <Button Content=" tak chujwoo " Height=" 140" Width=" 100" />
+    <Grid HorizontalAlignment="Center" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="110" />
+            <RowDefinition Height="110" />
+            <RowDefinition Height="110" />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="1" Grid.Row="1" Content="Anime" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="2" Grid.Row="1" Content="Dla dzieci" Height="80" Width="150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="3" Grid.Row="1" Content="Dramaty" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="4" Grid.Row="1" Content="Kino akcji" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="5" Grid.Row="1" Content="Horror" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+
+        <Button Grid.Column="1" Grid.Row="2" Content="Komedie" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="2" Grid.Row="2" Content="Romantyczne" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="3" Grid.Row="2" Content="Science fiction" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="4" Grid.Row="2" Content="Fantasy" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="5" Grid.Row="2" Content="Sensacyjne" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+
+        <Button Grid.Column="1" Grid.Row="3" Content="Thrillery" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="2" Grid.Row="3" Content="Dokumentalne" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="3" Grid.Row="3" Content="Musicale" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="4" Grid.Row="3" Content="Kryminalne" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+        <Button Grid.Column="5" Grid.Row="3" Content="Kino niezależne" Height=" 80" Width=" 150" Click="Button_Click" HorizontalAlignment="Center" />
+
     </Grid>
 </Page>
