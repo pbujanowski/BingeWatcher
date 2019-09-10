@@ -8,5 +8,6 @@
     mc:Ignorable="d">
     <Grid Margin="50,50,50,50">
         <TextBlock Text="Witaj w BingeWatcher. Używając przycisków w górze ekranu wybierz gatunek filmu, wyszukaj film lub się zaloguj." Margin="66,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1322" FontSize="25"/>
+        <TextBlock Text="BingeWatcher to platforma do oglądania filmów z całego świata." Margin="66,58,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1322" FontSize="25"/>
     </Grid>
 </Page>
