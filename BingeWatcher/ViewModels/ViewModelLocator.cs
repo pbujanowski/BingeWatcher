@@ -23,8 +23,7 @@ namespace BingeWatcher.ViewModels
             Register<SettingsViewModel, SettingsPage>();
             Register<LoginViewModel, LoginPage>();
             Register<MovieGeneresViewModel, MovieGeneresPage>();
-           // Register<SearchViewModel, SearchPage>();
-            Register<LoginViewModel, LoginPage>();
+            Register<SearchViewModel, SearchPage>();
         }
 
         public SettingsViewModel SettingsViewModel => SimpleIoc.Default.GetInstance<SettingsViewModel>();
@@ -40,7 +39,7 @@ namespace BingeWatcher.ViewModels
 
         public LoginViewModel LoginViewModel => SimpleIoc.Default.GetInstance<LoginViewModel>();
         public MovieGeneresViewModel MovieGeneresViewModel => SimpleIoc.Default.GetInstance<MovieGeneresViewModel>();
-        //public SearchViewModel SearchViewModel => SimpleIoc.Default.GetInstance<SearchViewModel>();
+        public SearchViewModel SearchViewModel => SimpleIoc.Default.GetInstance<SearchViewModel>();
 
         public void Register<VM, V>()
             where VM : class
