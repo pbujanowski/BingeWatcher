@@ -31,6 +31,7 @@
             Or to use an IconElement instead of a Symbol see https://github.com/Microsoft/WindowsTemplateStudio/blob/master/docs/projectTypes/navigationpane.md
             Edit String/en-US/Resources.resw: Add a menu item title for each page
             -->
+            <Image Source="ms-appx:///Assets/logo.png" />
             <winui:NavigationViewItem x:Uid="Shell_Main" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MainViewModel" />
             <winui:NavigationViewItem x:Uid="Shell_MoviePlayer" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MoviePlayerViewModel" />
             <winui:NavigationViewItem x:Uid="Shell_MovieGeneres" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MovieGeneresViewModel" />
@@ -43,7 +44,7 @@
             </ic:EventTriggerBehavior>
         </i:Interaction.Behaviors>
         <Grid>
-            <Frame x:Name="shellFrame" />
+            <Frame x:Name="shellFrame" HorizontalAlignment="Stretch" Margin="0,61,0,0" VerticalAlignment="Stretch" />
         </Grid>
     </winui:NavigationView>
 </Page>
