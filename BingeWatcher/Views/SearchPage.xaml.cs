@@ -5,6 +5,7 @@ using BingeWatcher.ViewModels;
 using Windows.Media.Playback;
 using Windows.System.Display;
 using Windows.UI.Core;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
@@ -22,6 +23,13 @@ namespace BingeWatcher.Views
         public SearchPage()
         {
             InitializeComponent();
-        }  
+        }
+
+        public void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= TextBox_GotFocus;
+        }
     }
 }
