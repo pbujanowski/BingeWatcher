@@ -24,14 +24,43 @@ namespace BingeWatcher.Views
             InitializeComponent();
         }
 
-        private void ClearGeneres()
+       
+        private async void PlaybackSession_PlaybackStateChanged(MediaPlaybackSession sender, object args)
         {
-            
+            if (sender is MediaPlaybackSession playbackSession && playbackSession.NaturalVideoHeight != 0)
+            {
+                if (playbackSession.PlaybackState == MediaPlaybackState.Playing)
+                {
+                    if (!_isRequestActive)
+                    {
+                        await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                        {
+                            _displayRequest.RequestActive();
+                            _isRequestActive = true;
+                        });
+                    }
+                }
+                else
+                {
+                    if (_isRequestActive)
+                    {
+                        await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                        {
+                            _displayRequest.RequestRelease();
+                            _isRequestActive = false;
+                        });
+                    }
+                }
+            }
         }
 
         private void Button_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            //anime
+
+        }
+
+        private void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
 
         }
     }
