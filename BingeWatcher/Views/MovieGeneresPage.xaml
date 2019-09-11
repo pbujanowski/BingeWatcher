@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid HorizontalAlignment="Center" >
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,902,0" VerticalAlignment="Stretch"  >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
             <ColumnDefinition Width="200" />
