@@ -45,6 +45,12 @@ namespace BingeWatcher.Core.Models
         Thriller,
 
         [Description("Western")]
-        Western
+        Western,
+
+        [Description("Musical")]
+        Musical,
+            [Description("Anime")]
+        Anime
+
     }
 }
