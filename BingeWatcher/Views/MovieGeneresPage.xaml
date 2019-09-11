@@ -46,8 +46,8 @@
         <Button Name="button15" Grid.Column="3" Grid.Row="5" Content="Kino niezależne" Height=" 80" Width=" 150" Click="Button_Click15" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
 
 
-        <ListBox Name="lb" VerticalAlignment="Top" Grid.Column="5">
-            <ListBoxItem>Item 0</ListBoxItem>
+        <ListBox Name="lb" Grid.Column="5" Grid.Row="1" Grid.RowSpan="200">
+            <ListBoxItem HorizontalAlignment="Stretch" Height="50" Margin="0,0,0,0" VerticalAlignment="Stretch">Item 0</ListBoxItem>
             <ListBoxItem>Item 1</ListBoxItem>
             <ListBoxItem>Item 2</ListBoxItem>
             <ListBoxItem>Item 3</ListBoxItem>
