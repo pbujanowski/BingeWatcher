@@ -6,13 +6,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid HorizontalAlignment="Stretch" Margin="0,0,970,0" VerticalAlignment="Stretch">
+    <Grid Margin="0,0,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="170" />
             <ColumnDefinition Width="170" />
             <ColumnDefinition Width="170" />
-            
+            <ColumnDefinition Width="50" />
+
+            <ColumnDefinition Width="600" />
+
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10" />
@@ -23,23 +27,32 @@
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
-        <Button Name="button1" Grid.Column="1" Grid.Row="1" Content="Anime" Height=" 80" Width=" 150" Click="Button_Click1" HorizontalAlignment="Center" />
-        <Button Name="button2" Grid.Column="2" Grid.Row="1" Content="Dla dzieci" Height="80" Width="150" Click="Button_Click2" HorizontalAlignment="Center" />
-        <Button Name="button3" Grid.Column="3" Grid.Row="1" Content="Dramaty" Height=" 80" Width=" 150" Click="Button_Click3" HorizontalAlignment="Center" />
-        <Button Name="button4" Grid.Column="1" Grid.Row="4" Content="Kino akcji" Height=" 80" Width=" 150" Click="Button_Click4" HorizontalAlignment="Center" />
-        <Button Name="button5" Grid.Column="2" Grid.Row="4" Content="Horror" Height=" 80" Width=" 150" Click="Button_Click5" HorizontalAlignment="Center" />
+        <Button Name="button1" Grid.Column="1" Grid.Row="1" Content="Anime" Height=" 80" Width=" 150" Click="Button_Click1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button2" Grid.Column="2" Grid.Row="1" Content="Dla dzieci" Height="80" Width="150" Click="Button_Click2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button3" Grid.Column="3" Grid.Row="1" Content="Dramaty" Height=" 80" Width=" 150" Click="Button_Click3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button4" Grid.Column="1" Grid.Row="4" Content="Kino akcji" Height=" 80" Width=" 150" Click="Button_Click4" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button5" Grid.Column="2" Grid.Row="4" Content="Horror" Height=" 80" Width=" 150" Click="Button_Click5" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
 
-        <Button Name="button6" Grid.Column="1" Grid.Row="2" Content="Komedie" Height=" 80" Width=" 150" Click="Button_Click6" HorizontalAlignment="Center" />
-        <Button Name="button7" Grid.Column="2" Grid.Row="2" Content="Romantyczne" Height=" 80" Width=" 150" Click="Button_Click7" HorizontalAlignment="Center" />
-        <Button Name="button8" Grid.Column="3" Grid.Row="2" Content="Science fiction" Height=" 80" Width=" 150" Click="Button_Click8" HorizontalAlignment="Center" />
-        <Button Name="button9" Grid.Column="1" Grid.Row="5" Content="Fantasy" Height=" 80" Width=" 150" Click="Button_Click9" HorizontalAlignment="Center" />
-        <Button Name="button10" Grid.Column="2" Grid.Row="5" Content="Sensacyjne" Height=" 80" Width=" 150" Click="Button_Click10" HorizontalAlignment="Center" />
+        <Button Name="button6" Grid.Column="1" Grid.Row="2" Content="Komedie" Height=" 80" Width=" 150" Click="Button_Click6" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button7" Grid.Column="2" Grid.Row="2" Content="Romantyczne" Height=" 80" Width=" 150" Click="Button_Click7" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button8" Grid.Column="3" Grid.Row="2" Content="Science fiction" Height=" 80" Width=" 150" Click="Button_Click8" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button9" Grid.Column="1" Grid.Row="5" Content="Fantasy" Height=" 80" Width=" 150" Click="Button_Click9" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button10" Grid.Column="2" Grid.Row="5" Content="Sensacyjne" Height=" 80" Width=" 150" Click="Button_Click10" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
 
-        <Button Name="button11" Grid.Column="1" Grid.Row="3" Content="Thrillery" Height=" 80" Width=" 150" Click="Button_Click11" HorizontalAlignment="Center" />
-        <Button Name="button12" Grid.Column="2" Grid.Row="3" Content="Dokumentalne" Height=" 80" Width=" 150" Click="Button_Click12" HorizontalAlignment="Center" />
-        <Button Name="button13" Grid.Column="3" Grid.Row="3" Content="Musicale" Height=" 80" Width=" 150" Click="Button_Click13" HorizontalAlignment="Center" />
-        <Button Name="button14" Grid.Column="3" Grid.Row="4" Content="Kryminalne" Height=" 80" Width=" 150" Click="Button_Click14" HorizontalAlignment="Center" />
-        <Button Name="button15" Grid.Column="3" Grid.Row="5" Content="Kino niezależne" Height=" 80" Width=" 150" Click="Button_Click15" HorizontalAlignment="Center" />
+        <Button Name="button11" Grid.Column="1" Grid.Row="3" Content="Thrillery" Height=" 80" Width=" 150" Click="Button_Click11" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button12" Grid.Column="2" Grid.Row="3" Content="Dokumentalne" Height=" 80" Width=" 150" Click="Button_Click12" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button13" Grid.Column="3" Grid.Row="3" Content="Musicale" Height=" 80" Width=" 150" Click="Button_Click13" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button14" Grid.Column="3" Grid.Row="4" Content="Kryminalne" Height=" 80" Width=" 150" Click="Button_Click14" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
+        <Button Name="button15" Grid.Column="3" Grid.Row="5" Content="Kino niezależne" Height=" 80" Width=" 150" Click="Button_Click15" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" />
 
+
+        <ListBox Name="lb" VerticalAlignment="Top" Grid.Column="5">
+            <ListBoxItem>Item 0</ListBoxItem>
+            <ListBoxItem>Item 1</ListBoxItem>
+            <ListBoxItem>Item 2</ListBoxItem>
+            <ListBoxItem>Item 3</ListBoxItem>
+        </ListBox>
+        
     </Grid>
+
 </Page>
