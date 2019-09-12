@@ -27,8 +27,7 @@ namespace BingeWatcher.Views
                 title.Text = Globals.Title.ToString() + "(" + Globals.ReleaseDate.ToString() + ")";
 
             genere.Text = Globals.Genre.ToString();
-
-            mpe.Source = 
+            
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
