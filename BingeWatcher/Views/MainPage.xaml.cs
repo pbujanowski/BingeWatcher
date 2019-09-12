@@ -22,5 +22,12 @@ namespace BingeWatcher.Views
         {
 
         }
+
+        private void HyperlinkButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+           
+            
+            this.Frame.Navigate(typeof(MoviePlayerPage));
+        }
     }
 }

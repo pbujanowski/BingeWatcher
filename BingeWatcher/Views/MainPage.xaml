@@ -13,7 +13,7 @@
             <ColumnDefinition Width="300" />
             <ColumnDefinition Width="300" />
             <ColumnDefinition Width="300" />
-            
+
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -61,5 +61,106 @@
         <Image Margin="10,10,10,10" Grid.Column="0" Grid.Row="1" Source="ms-appx:///Assets/kacvegas.jpg" ManipulationMode="None" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   >
 
         </Image>
+
+        <HyperlinkButton Name="hyper1" Content="Oglądaj" Click="HyperlinkButton_Click" Width="253" Height="380" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper2" Content="Oglądaj" Click="HyperlinkButton_Click" Width="253" Height="380" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="1"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper3" Content="Oglądaj" Click="HyperlinkButton_Click" Width="253" Height="380" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="2"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper4" Content="Oglądaj" Click="HyperlinkButton_Click" Width="251" Height="380" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="3"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper5" Content="Oglądaj" Click="HyperlinkButton_Click" Width="264" Height="380" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="4" >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper6" Content="Oglądaj" Click="HyperlinkButton_Click" Width="251" Height="380" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper7" Content="Oglądaj" Click="HyperlinkButton_Click" Width="214" Height="380" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="1"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper8" Content="Oglądaj" Click="HyperlinkButton_Click" Width="253" Height="380" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="2"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper9" Content="Oglądaj" Click="HyperlinkButton_Click" Width="263" Height="380" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="3"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
+        <HyperlinkButton Name="hyper10" Content="Oglądaj" Click="HyperlinkButton_Click" Width="264" Height="380" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Transparent" FocusVisualSecondaryBrush="#99FFFFFF" Grid.Column="4"  >
+            <HyperlinkButton.Background>
+                <SolidColorBrush Color="#FF2B2B2B" Opacity="0.03"/>
+            </HyperlinkButton.Background>
+            <HyperlinkButton.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </HyperlinkButton.ContentTemplate>
+        </HyperlinkButton>
     </Grid>
 </Page>
