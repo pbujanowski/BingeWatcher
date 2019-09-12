@@ -1,5 +1,5 @@
 ﻿using System;
-
+using BingeWatcher.Core.Models;
 using BingeWatcher.ViewModels;
 
 using Windows.UI.Xaml.Controls;
@@ -19,6 +19,10 @@ namespace BingeWatcher.Views
             InitializeComponent();
             DataContext = ViewModel;
             ViewModel.Initialize(shellFrame, navigationView, KeyboardAccelerators);
+            Globals.Genre = "";
+            Globals.Source = "";
+            Globals.Title = "";
+            Globals.ReleaseDate = "";
         }
     }
 }

@@ -7,8 +7,8 @@
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
     <Grid>
-        <TextBlock Name="title" Text="Tytuł (Rok)" Margin="50,27,0,0" FontSize="30" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Name="genere" Text="Gatunek" Margin="50,72,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52"/>
+        <TextBlock Name="title"  Margin="50,27,0,0" FontSize="30" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Name="genere"  Margin="50,72,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52"/>
         <MediaPlayerElement x:Name="mpe"
                             AutoPlay="True"
                             AreTransportControlsEnabled="True"

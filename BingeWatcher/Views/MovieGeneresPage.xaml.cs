@@ -152,13 +152,25 @@ namespace BingeWatcher.Views
         {
             if (lb.SelectedIndex > -1)
             {
-                watchButton.Content = activeGenere.ToString() + (lb.SelectedIndex.ToString());
-                Task<List<Movie>> movie = movies.GetMoviesByGenre(activeGenere);
-                List<Movie> list = movie.Result;
-                string source = list[lb.SelectedIndex].Source;
+                hyper.Content = activeGenere.ToString() + (lb.SelectedIndex.ToString());
 
-            }
-            this.Frame.Navigate(typeof(MoviePlayerPage));
+                Task<List<Movie>> movie = movies.GetMoviesByGenre(activeGenere);
+                //List<Movie> list = movie.Result;
+                //string source = list[lb.SelectedIndex].Source;
+
+                /*Globals.Genre = list[lb.SelectedIndex].Genre;
+                Globals.Source = list[lb.SelectedIndex].Source;
+                Globals.Title = list[lb.SelectedIndex].Title;
+                Globals.ReleaseDate = list[lb.SelectedIndex].ReleaseDate.Year;*/
+
+                Globals.Genre = activeGenere.ToString();
+                Globals.Source = "link";
+                Globals.Title = "Titanic Super 3D";
+                Globals.ReleaseDate = 1997.ToString();
+
+                this.Frame.Navigate(typeof(MoviePlayerPage));
+            }            
         }
+
     }
 }

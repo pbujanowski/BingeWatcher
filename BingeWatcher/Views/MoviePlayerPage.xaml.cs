@@ -1,5 +1,5 @@
 ﻿using System;
-
+using BingeWatcher.Core.Models;
 using BingeWatcher.ViewModels;
 
 using Windows.Media.Playback;
@@ -22,6 +22,13 @@ namespace BingeWatcher.Views
         public MoviePlayerPage()
         {
             InitializeComponent();
+
+            if(Globals.ReleaseDate != "")
+                title.Text = Globals.Title.ToString() + "(" + Globals.ReleaseDate.ToString() + ")";
+
+            genere.Text = Globals.Genre.ToString();
+
+            mpe.Source = 
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
