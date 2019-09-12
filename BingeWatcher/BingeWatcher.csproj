@@ -148,6 +148,7 @@
     <Compile Include="Views\FirstRunDialog.xaml.cs">
       <DependentUpon>FirstRunDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Globals.cs" />
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -246,9 +247,19 @@
     <Compile Include="Helpers\ResourceExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\asterix.jpg" />
+    <Content Include="Assets\fight.jpg" />
+    <Content Include="Assets\kacvegas.jpg" />
     <Content Include="Assets\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\lord.jpg" />
+    <Content Include="Assets\matrix.jpg" />
+    <Content Include="Assets\nakedgun.jpg" />
+    <Content Include="Assets\note.jpg" />
+    <Content Include="Assets\notebook.jpg" />
+    <Content Include="Assets\to.jpg" />
+    <Content Include="Assets\vaiana.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

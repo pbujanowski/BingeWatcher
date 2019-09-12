@@ -17,5 +17,17 @@ namespace BingeWatcher.Views
         {
             InitializeComponent();
         }
+
+        private void TextBlock_SelectionChanged(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
+        }
+
+        private void HyperlinkButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+           
+            
+            this.Frame.Navigate(typeof(MoviePlayerPage));
+        }
     }
 }
