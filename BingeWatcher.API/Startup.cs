@@ -45,9 +45,11 @@ namespace BingeWatcher.API
 
             services.AddMvc();
 
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
             services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
-
+                    options.UseNpgsql(Configuration.GetConnectionString("ApplicationDbContext")));
+            
             services.AddAutoMapper();
 
             var appSettingsSection = Configuration.GetSection("AppSettings");
