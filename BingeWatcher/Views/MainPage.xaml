@@ -6,10 +6,54 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid Margin="50,50,50,50">
-        <TextBlock Text="Nie klikaj w logo! Grozi wybuchem! Serio." Margin="66,22,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1322" FontSize="25"/>
-        <TextBlock Text="Witaj w BingeWatcher. Używając przycisków w górze ekranu wybierz gatunek filmu, wyszukaj film lub się zaloguj." Margin="66,63,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1322" FontSize="25"/>
-        <TextBlock Text="BingeWatcher to platforma do oglądania filmów z całego świata." Margin="66,101,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1322" FontSize="25"/>
+    <Grid Margin="30,30,30,30" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="300" />
 
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="400" />
+            <RowDefinition Height="400" />
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Nie klikaj w logo! Grozi wybuchem! Serio. Witaj w BingeWatcher. Używając przycisków w górze ekranu wybierz gatunek filmu, wyszukaj film lub się zaloguj.
+                   BingeWatcher to platforma do oglądania filmów z całego świata."
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="1371" FontSize="25" Height="35" RenderTransformOrigin="0.5,0.5" Margin="-3,0,0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.029"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <Image Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" Source="ms-appx:///Assets/vaiana.jpg" ManipulationMode="None"   >
+        
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="3" Grid.Row="2" Source="ms-appx:///Assets/to.jpg" ManipulationMode="None"   >
+            
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="1" Grid.Row="2" Source="ms-appx:///Assets/note.jpg" ManipulationMode="None"   >
+
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="4" Grid.Row="1" Source="ms-appx:///Assets/notebook.jpg" ManipulationMode="None"   >
+
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="2" Grid.Row="2" Source="ms-appx:///Assets/nakedgun.jpg" ManipulationMode="None"   >
+
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="3" Grid.Row="1" Source="ms-appx:///Assets/lord.jpg" ManipulationMode="None"   >
+
+        </Image>
+        <Image Margin="10,10,10,10" Grid.Column="2" Grid.Row="1" Source="ms-appx:///Assets/matrix.jpg" ManipulationMode="None"   >
+            
+        </Image>
+
+        <Image Margin="10,10,10,10" Grid.Column="4" Grid.Row="2" Source="ms-appx:///Assets/asterix.jpg" ManipulationMode="None"   >
+
+        </Image>
     </Grid>
 </Page>
