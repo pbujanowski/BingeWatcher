@@ -46,9 +46,9 @@ namespace BingeWatcher.Views
         {
             activeGenere = MovieGenre.Action;
 
-            //Task<List<Movie>> moviesList = movies.GetMoviesByGenre(MovieGenre.Action);
-            //List<Movie> list = moviesList.Result;
-            fillListBox(button1.Content.ToString());
+            Task<List<Movie>> moviesList = movies.GetMoviesByGenre(MovieGenre.Action);
+            List<Movie> list = moviesList.Result;
+            //fillListBox(button1.Content.ToString());
         }
 
         private void Button_Click2(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -152,21 +152,21 @@ namespace BingeWatcher.Views
         {
             if (lb.SelectedIndex > -1)
             {
-                hyper.Content = activeGenere.ToString() + (lb.SelectedIndex.ToString());
+               // hyper.Content = activeGenere.ToString() + (lb.SelectedIndex.ToString());
 
                 Task<List<Movie>> movie = movies.GetMoviesByGenre(activeGenere);
-                //List<Movie> list = movie.Result;
-                //string source = list[lb.SelectedIndex].Source;
+                List<Movie> list = movie.Result;
+                string source = list[lb.SelectedIndex].Source;
 
-                /*Globals.Genre = list[lb.SelectedIndex].Genre;
+                Globals.Genre = list[lb.SelectedIndex].Genre.ToString();
                 Globals.Source = list[lb.SelectedIndex].Source;
                 Globals.Title = list[lb.SelectedIndex].Title;
-                Globals.ReleaseDate = list[lb.SelectedIndex].ReleaseDate.Year;*/
+                Globals.ReleaseDate = list[lb.SelectedIndex].ReleaseDate.Year.ToString();
 
-                Globals.Genre = activeGenere.ToString();
+                /*Globals.Genre = activeGenere.ToString();
                 Globals.Source = "linsdsggukhebgeruogberorguk";
                 Globals.Title = "Titanic Super 3D";
-                Globals.ReleaseDate = 1997.ToString();
+                Globals.ReleaseDate = 1997.ToString();*/
 
                 this.Frame.Navigate(typeof(MoviePlayerPage));
             }            
