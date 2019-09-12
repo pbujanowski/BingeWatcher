@@ -147,8 +147,8 @@ namespace BingeWatcher.Views
 
             fillListBox(button15.Content.ToString());
         }
-
-        private void WatchButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        
+        private void HyperlinkButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             if (lb.SelectedIndex > -1)
             {
@@ -156,8 +156,9 @@ namespace BingeWatcher.Views
                 Task<List<Movie>> movie = movies.GetMoviesByGenre(activeGenere);
                 List<Movie> list = movie.Result;
                 string source = list[lb.SelectedIndex].Source;
-                
+
             }
+            this.Frame.Navigate(typeof(MoviePlayerPage));
         }
     }
 }
