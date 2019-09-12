@@ -9,11 +9,12 @@
     <Grid>
         <TextBlock Name="title"  Margin="50,27,0,0" FontSize="30" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Name="genere"  Margin="50,72,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52"/>
+        <TextBlock Name="link"  Text="link" Margin="50,115,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52"/>
         <MediaPlayerElement x:Name="mpe"
                             AutoPlay="True"
                             AreTransportControlsEnabled="True"
                             PosterSource="{x:Bind ViewModel.PosterSource, Mode=OneWay}"
-                            Source="{x:Bind ViewModel.Source, Mode=OneWay}" Margin="50,120,50,50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                            Source="{RelativeSource}" Margin="50,120,50,50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
             <MediaPlayerElement.TransportControls>
                 <MediaTransportControls IsCompact="False"/>
             </MediaPlayerElement.TransportControls>

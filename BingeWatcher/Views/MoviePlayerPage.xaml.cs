@@ -1,7 +1,7 @@
 ﻿using System;
 using BingeWatcher.Core.Models;
 using BingeWatcher.ViewModels;
-
+using Windows.Media.Core;
 using Windows.Media.Playback;
 using Windows.System.Display;
 using Windows.UI.Core;
@@ -27,7 +27,8 @@ namespace BingeWatcher.Views
                 title.Text = Globals.Title.ToString() + "(" + Globals.ReleaseDate.ToString() + ")";
 
             genere.Text = Globals.Genre.ToString();
-            
+            mpe.Source = MediaSource.CreateFromUri(new Uri(Globals.Source));
+            link.Text = Globals.Source;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

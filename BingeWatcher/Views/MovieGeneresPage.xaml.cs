@@ -164,7 +164,7 @@ namespace BingeWatcher.Views
                 Globals.ReleaseDate = list[lb.SelectedIndex].ReleaseDate.Year;*/
 
                 Globals.Genre = activeGenere.ToString();
-                Globals.Source = "link";
+                Globals.Source = "linsdsggukhebgeruogberorguk";
                 Globals.Title = "Titanic Super 3D";
                 Globals.ReleaseDate = 1997.ToString();
 
