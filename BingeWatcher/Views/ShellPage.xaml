@@ -15,8 +15,13 @@
             <ic:InvokeCommandAction Command="{x:Bind ViewModel.LoadedCommand}" />
         </ic:EventTriggerBehavior>
     </i:Interaction.Behaviors>
-
-    <winui:NavigationView
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="ms-appx:///Assets/logo.png" ManipulationMode="None" />
+        <winui:NavigationView Grid.Row="1"
         x:Name="navigationView"
         IsBackButtonVisible="Visible"
         IsBackEnabled="{x:Bind ViewModel.IsBackEnabled, Mode=OneWay}"
@@ -24,27 +29,29 @@
         IsSettingsVisible="True"
         PaneDisplayMode="Top"
         Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
-        <winui:NavigationView.MenuItems>
-            <!--
+            <winui:NavigationView.MenuItems>
+                <!--
             TODO WTS: Change the symbols for each item as appropriate for your app
             More on Segoe UI Symbol icons: https://docs.microsoft.com/windows/uwp/style/segoe-ui-symbol-font
             Or to use an IconElement instead of a Symbol see https://github.com/Microsoft/WindowsTemplateStudio/blob/master/docs/projectTypes/navigationpane.md
             Edit String/en-US/Resources.resw: Add a menu item title for each page
             -->
-            <Image Source="ms-appx:///Assets/logo.png" ManipulationMode="None" />
-            <winui:NavigationViewItem x:Uid="Shell_Main" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MainViewModel" />
-            <winui:NavigationViewItem x:Uid="Shell_MoviePlayer" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MoviePlayerViewModel" />
-            <winui:NavigationViewItem x:Uid="Shell_MovieGeneres" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MovieGeneresViewModel" />
-            <winui:NavigationViewItem x:Uid="Shell_Search" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.SearchViewModel" />
-            <winui:NavigationViewItem x:Uid="Shell_Login" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.LoginViewModel"/>
-        </winui:NavigationView.MenuItems>
-        <i:Interaction.Behaviors>
-            <ic:EventTriggerBehavior EventName="ItemInvoked">
-                <ic:InvokeCommandAction Command="{x:Bind ViewModel.ItemInvokedCommand}" />
-            </ic:EventTriggerBehavior>
-        </i:Interaction.Behaviors>
-        <Grid>
-            <Frame x:Name="shellFrame" HorizontalAlignment="Stretch" Margin="0,61,0,0" VerticalAlignment="Stretch" />
-        </Grid>
-    </winui:NavigationView>
+
+                <winui:NavigationViewItem x:Uid="Shell_Main" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MainViewModel" />
+                <winui:NavigationViewItem x:Uid="Shell_MoviePlayer" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MoviePlayerViewModel" />
+                <winui:NavigationViewItem x:Uid="Shell_MovieGeneres" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.MovieGeneresViewModel" />
+                <winui:NavigationViewItem x:Uid="Shell_Search" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.SearchViewModel" />
+                <winui:NavigationViewItem x:Uid="Shell_Login" helpers:NavHelper.NavigateTo="BingeWatcher.ViewModels.LoginViewModel"/>
+            </winui:NavigationView.MenuItems>
+            <i:Interaction.Behaviors>
+                <ic:EventTriggerBehavior EventName="ItemInvoked">
+                    <ic:InvokeCommandAction Command="{x:Bind ViewModel.ItemInvokedCommand}" />
+                </ic:EventTriggerBehavior>
+            </i:Interaction.Behaviors>
+            <Grid>
+                <Frame x:Name="shellFrame" HorizontalAlignment="Stretch" Margin="0,61,0,0" VerticalAlignment="Stretch" />
+            </Grid>
+        </winui:NavigationView>
+    </Grid>
+    
 </Page>

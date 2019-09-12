@@ -22,11 +22,11 @@ namespace BingeWatcher.Core.Models
         [DisplayName("Reżyseria")]
         public string Director { get; set; }
 
-        [Required]
+        //[Required]
         [DisplayName("Scenariusz")]
         public string Writer { get; set; }
 
-        [Required]
+        //[Required]
         [DataType(DataType.Date)]
         [DisplayName("Data premiery")]
         public DateTime ReleaseDate { get; set; }
@@ -40,7 +40,7 @@ namespace BingeWatcher.Core.Models
         [DisplayName("Data dodania")]
         public DateTime AddedDate { get; set; }
 
-        [Required]
+        //[Required]
         [DisplayName("Dostawca")]
         public string Provider { get; set; }
 
@@ -48,10 +48,10 @@ namespace BingeWatcher.Core.Models
         [DisplayName("Czy aktywny?")]
         public bool IsActive { get; set; }
 
-        [Required]
+        //[Required]
         public string Source { get; set; }
 
-        [Required]
+        //[Required]
         public string PosterSource { get; set; }
 
         public Movie()
